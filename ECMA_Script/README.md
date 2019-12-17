@@ -13,6 +13,7 @@ ECMA Script는 ECMA International이라는 표준 제정 비영리 표준화 기
 그렇다면 자바스크립트 혹은 JS라고 부르는 이 용어는 무엇일까요? Javascript는 웹에서 사용하는 하나의 스크립트 언어이며, 보편적으로 ECMA Script와 구분없이 Javascript라고 부릅니다. 더불어 현대의 웹 브라우저를 구성하는 핵심이 되는 언어입니다. 그 이유는 현대의 모든 웹 브라우저는 Javascript 엔진을 바탕으로 구성되어 있기 때문입니다.
 
 > 대표적으로 Google Chromium의 V8, Mozilla Firefox의 SpiderMonkey, Microsoft Edge의 Chakra가 자바스크립트 엔진이라고 이야기할 수 있습니다.
+>
 > 또한, 웹 브라우저는 Javascript 뿐만 아니라 웹 렌더링 엔진이 함께 존재하고(가령 Chromium은 웹 렌더링을 위해 Blink라는 엔진을 사용하고, Firefox는 Gecko라는 엔진을 사용합니다), 다양한 마이크로프로세서(IA-32, x64, ARM 등의 하드웨어 명령 집합 아키텍처)를 지원하도록 설계되었습니다.
 
 근 10년 사이에 Javascript를 포함한 스크립트 언어(Python, C# 등)가 Machine Leaning, Data Science, Cross Platform Developments 등 다양한 곳에 활용하고 있습니다. 그 중에서도 Javascript는 Node.js라고 부르는 Javascript 런타임을 통한 Server side에서의 활용이 활발하게 발전하고 있습니다.
