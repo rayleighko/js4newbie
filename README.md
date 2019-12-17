@@ -1,5 +1,7 @@
 # js4newbie
 
+신입 개발자를 위한 JS 가이드라인
+
 ## Curriculum
 
 ### 작성 완료
