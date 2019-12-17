@@ -1,6 +1,6 @@
 # js4newbie
 
-신입 개발자를 위한 JS 가이드라인
+개발자가 되기 위한 신입 JS 엔지니어 가이드
 
 ## Curriculum
 
