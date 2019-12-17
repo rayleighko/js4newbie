@@ -163,7 +163,7 @@ Array List는 내부적으로 배열을 사용하기 때문에 인덱스를 이�
 
 ![queue-io](https://cdn.programiz.com/sites/tutorial2program/files/queue.jpg)
 
-앞서 말한 것처럼 선입선출의 구조로, 먼저 들어온 데이터가 먼저 빠져나가는 것을 볼 수 있습니다. 
+앞서 말한 것처럼 선입선출의 구조로, 먼저 들어온 데이터가 먼저 빠져나가는 것을 볼 수 있습니다.
 
 ### 큐는 일상에서
 
@@ -187,7 +187,7 @@ Array List는 내부적으로 배열을 사용하기 때문에 인덱스를 이�
 
 일상에서는 물건을 쌓아 올리는 상황이나 질서있게 스쿨버스를 탄 상황(먼저 탄 순서대로 내리는 경우)을 생각하시면 됩니다. 또한, 웹 브라우저의 '앞으로 가기'와 '뒤로 가기'의 동작이 스택에 해당합니다.
 
-> 참고로 앞으로 살펴볼 트리 구조의 깊이 우선 탐색(Depth First Search: 한 노드의 끝까지 탐색한 후 옆으로 이동하는 방식)에서 사용됩니다.
+> 실 사례로는 트리 구조의 탐색에서 깊이 우선 탐색(Depth First Search: 한 노드의 끝까지 탐색한 후 옆으로 이동하는 방식)알고리즘에서 사용됩니다.
 
 ## Graph, 그래프
 
@@ -195,7 +195,7 @@ Array List는 내부적으로 배열을 사용하기 때문에 인덱스를 이�
 
 ![graph-intro](https://cdn.programiz.com/sites/tutorial2program/files/graph-vertices-edges.jpg)
 
-코드에서는 행렬로 표현되며, code-4과 같은 형태를 가집니다.
+코드에서는 2차원 개념으로 표현되며, code-4과 같은 형태를 가집니다.
 
 ```text
 // code-4
@@ -206,9 +206,15 @@ Graph = {Node, Edge}
 
 ```
 
-따라서 둘을 함께 표현하면 다음과 같이 표현됩니다.
+더불어 그래프는 배열과 리스트로 구현될 수 있으며 일반적으로 다음의 형태로 제공됩니다.
+
+### 인접 행렬(Adjacency Matrix)
 
 ![graph-matrix](https://cdn.programiz.com/sites/tutorial2program/files/graph-adjacency-matrix.jpg)
+
+### 인접 리스트(Adjacency List)
+
+![graph-list](https://cdn.programiz.com/sites/tutorial2program/files/graph-adjacency-list.jpg)
 
 각 엣지는 벡터와 스칼라로 재현되며, 방향성의 여부에 따라 그래프의 형태가 달라지게 됩니다. 스칼라 엣지로 구현된 그래프는 무방향성(Undirected) 그래프, 벡터 엣지로 구현된 그래프는 방향성(Directed) 그래프라고 이야기하며 각각 다음과 같은 형태를 가집니다.
 
@@ -228,10 +234,29 @@ Graph = {Node, Edge}
 
 ## Tree, 트리
 
+트리는 여러 데이터가 계층 구조로 연결된 형태를 표현할 때 사용됩니다. 트리라는 이름 그대로 뿌리(root)를 기준으로 잎사귀들(Leafs)이 아래로 자라는 나무를 생각하시면 됩니다. 트리는 다음의 용어로 표현됩니다.
+
+* node, 노드 - 트리의 데이터를 저장하는 각 항목을 이야기합니다.
+* child node, 자식 노드 - 노드 A의 하층에 노드 B가 있다면, 노드 B를 노드 A의 '자식 노드'라고 부릅니다.
+* parent node, 부모 노드 - 노드 B의 상층에 노드 A가 있다면, 노드 A를 노드 B의 '부모 노드'라고 부릅니다.
+* root node, 뿌리 노드 - 트리의 가장 상층에 있는 노드를 말합니다.
+* leaf node, 잎 노드 - 자식 노드가 없는 모든 노드를 말합니다.
+* ancestor node, 조상 노드 - 노드 A의 자식을 따라 내려갔을 때 노드 B에 도달할 수 있다면, 노드 A를 노드 B의 조상 노드라고 부릅니다.
+* descendant node, 자손 노드 - 노드 A가 노드 B의 조상 노드일 때, 노드 B를 노드 A의 자손 노드라고 부릅니다.
+* sibling node, 형제 노드 - 같은 부모 노드를 갖는 다른 노드를 보고 형제 노드라고 부릅니다.
+
+트리는 여러 형태를 가지지만, 우리는 오늘 그 중 가장 기초라고 할 수 있는 2진(Binary) 트리만을 살펴보도록 하겠습니다. 2진 트리는 다음과 같은 구조로 되어있습니다.
+
+![binary-tree](https://cdn.programiz.com/sites/tutorial2program/files/tree-concept.jpg)
+
+### 트리는 일상에서
+
+뒤집어진 나무의 형태를 띄며, 계층 구조를 나타내거나 계층 구조를 통해 알고리즘의 효율을 높이고자 할 때 주로 사용합니다. 일반적으로 댓글이나 카테고리 구분 등에서 사용합니다.
+
 ### 참고자료
 
 [opentutorials 자료 구조](https://opentutorials.org/module/1335/8636)
 [programiz의 stack](https://www.programiz.com/dsa/stack)
 [programiz의 queue](https://www.programiz.com/dsa/queue)
 [programiz의 graph](https://www.programiz.com/dsa/graph)
-[programiz의 tree](https://www.programiz.com/dsa/tree)
+[programiz의 tree](https://www.programiz.com/dsa/trees)
