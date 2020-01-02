@@ -19,7 +19,7 @@
 * JS의 Array를 이용해 기본적인 내장 함수(push, pop, shift, unshift, indexOf, splice, slice) 사용해보기  
 * JS의 Array를 이용해 심화적인 내장 함수(map, filter, find, keys, concat, flat, entries, includes) 사용해보기  
 
-[답안](/JS_data_scructure/Answer.js)  
+[답안](/JS_Data_scructure/Answer.js)  
 
 ## List, 리스트
 
@@ -42,7 +42,7 @@
 
 ![list-nodes](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile29.uf.tistory.com%2Fimage%2F25354A3857E8D15C1CA6DF)
 
-[답안](/JS_data_scructure/Answer.js)
+[답안](/JS_Data_scructure/Answer.js)
 
 ## Queue, 큐
 
@@ -51,7 +51,7 @@
 * FIFO(First In First Out) 형태로 데이터의 삽입과 삭제가 일어난다.  
 * 데이터를 삽입하는 enqueue와 삭제하는 dequeue을 구현한다.  
 
-[답안](/JS_data_scructure/Answer.js)
+[답안](/JS_Data_scructure/Answer.js)
 
 ## Stack, 스택
 
@@ -60,7 +60,7 @@
 * LIFO(Last In First Out) 형태로 데이터의 삽입과 삭제가 일어난다.  
 * 데이터를 삽입하는 push와 삭제하는 pop을 구현한다.  
 
-[답안](/JS_data_scructure/Answer.js)
+[답안](/JS_Data_scructure/Answer.js)
 
 ## Graph, 그래프
 
@@ -72,7 +72,7 @@
 * 하나의 노드는 하나 이상의 엣지를 가질 수 있다. 단, null도 허용한다.  
 * 그래프의 데이터는 선언 시 결정된다. 단, 추가 혹은 삭제 기능을 포함해 구현하면 좋다.  
 
-[답안](/JS_data_scructure/Answer.js)
+[답안](/JS_Data_scructure/Answer.js)
 
 ## Tree, 트리
 
@@ -84,4 +84,4 @@
 * 하나의 노드는 하나 이상의 자식을 가질 수 있다. 단, null도 허용한다.  
 * 트리의 데이터는 선언 시 결정된다. 단, 추가 혹은 삭제 기능을 포함해 구현하면 좋다.  
 
-[답안](/JS_data_scructure/Answer.js)
+[답안](/JS_Data_scructure/Answer.js)
